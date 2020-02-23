@@ -1,5 +1,6 @@
 package com.mycompany.service;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,39 +28,14 @@ public class ExcelParseObjectMapper {
 
         String[][] array = new String[mapListSize - startCell][startRow + 1];
 
-        for (String[] row : array) {
-            for (String str : row) {
-                str = null;
-            }
-        }
-        for (String[] row : array) {
-            for (String str : row) {
-                System.out.printf("%-12s", str);
-            }
-            System.out.print("\n");
-        }
-
         System.out.println();
 
-
-
-
+        processMerge(map);
 
 
         for (int i = 0; i <= startRow; i++) {
             for (int j = 0; j < mapListSize - startCell; j++) {
-                if (map.get(i).get(startCell + j).equals("MR")) {
-                    array[j][i] = array[j - 1][i];
-                } else if (map.get(i).get(startCell + j).equals("MC")) {
-                    array[j][i] = array[j][i - 1];
-                } else if (map.get(i).get(startCell + j).equals("MA") && j != 0) {
-                    if(array[j][i] == null) array[j][i] = array[j - 1][i];
-                    if(map.get(i + 1).get(startCell + j - 1).equals("MA")) {
-                        if (array[j][i] == null) array[j - 1][i + 1] = array[j - 1][i];
-                    }
-                } else {
-                    array[j][i] = map.get(i).get(startCell + j);
-                }
+                array[j][i] = map.get(i).get(startCell + j);
             }
         }
 
@@ -71,6 +47,34 @@ public class ExcelParseObjectMapper {
         }
 
 
+
+
+    }
+
+    public Map<Integer, List<String>> processMerge(Map<Integer, List<String>> map) {
+        for (int i = 0; i < map.size(); i++) {
+            for (int j = 0; j < map.get(i).size(); j++) {
+                if (map.get(i).get(j).equals("MR")) {
+                    map.get(i).set(j, map.get(i).get(j - 1));
+                }
+                if (map.get(i).get(j).equals("MC")) {
+                    map.get(i).set(j, map.get(i - 1).get(j));
+                }
+                if (map.get(i).get(j).equals("MA")) {
+                    map.get(i).set(j, map.get(i).get(j - 1));
+                    if (i != map.size() - 1 && map.get(i + 1).get(j - 1).equals("MA")) {
+                        map.get(i + 1).set(j - 1, map.get(i).get(j - 1));
+                    }
+                }
+
+            }
+
+        }
+
+
+        System.out.println("MergeMap:");
+        map.forEach((key, value) -> System.out.println(key + " " + value));
+        return map;
     }
 
 
