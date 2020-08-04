@@ -1,85 +1,72 @@
 package com.mycompany;
 
-import com.amazonaws.auth.AWSCredentials;
-import com.amazonaws.auth.BasicAWSCredentials;
-import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.*;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class App {
 
-    private static final String SUFFIX = "/";
+    public static void main (String[] args) throws Exception {
 
-    public static void main(String[] args) throws IOException {
-
-//        AWSCredentials credentials = new BasicAWSCredentials("WT3J3H6V2Y4UJ7X2CGUG", "AQnnaF1OwIB87Gu1kXhX99i4jnWUAPlVkw5KHOZhCtA");
-//        AmazonS3 s3client = new AmazonS3Client(credentials);
-//        s3client.setEndpoint("fra1.digitaloceanspaces.com");
-//
-//        String bucketName = "fttx-files";
-//        s3client.createBucket(bucketName);
-//
-//        for (Bucket bucket : s3client.listBuckets()) {
-//            System.out.println(" - " + bucket.getName());
-//        }
-
-        AWSCredentials credentials = new BasicAWSCredentials("WT3J3H6V2Y4UJ7X2CGUG", "AQnnaF1OwIB87Gu1kXhX99i4jnWUAPlVkw5KHOZhCtA");
-
-        AmazonS3 s3client = new AmazonS3Client(credentials);
-        s3client.setEndpoint("fra1.digitaloceanspaces.com");
-
-        //String bucketName = "fttx-files1";
-        //s3client.createBucket(bucketName);
-        //for (Bucket bucket : s3client.listBuckets()) {
-        //System.out.println(" - " + bucket.getName());
-        //}
-
-        System.out.println(s3client.listBuckets());
-        s3client.putObject(new PutObjectRequest("fttx-files/folder1", "newFile",
-                new File("/Users/mint/Documents/inner-classes.png"))
-                .withCannedAcl(CannedAccessControlList.Private));
-
-        //createFolder("fttx-files", "folder1", s3client);
+        String line = "/Users/mint/Downloads";
+        Path path = Paths.get(line);
 
 
-        S3Object fullObject = s3client.getObject(new GetObjectRequest("fttx-files/folder1", "newFile"));
+        try(Stream<Path> pathStream = Files.walk(path)){
 
-        System.out.println(fullObject.getObjectMetadata().getContentType());
+          String str =  pathStream
+                  .filter(p -> Files.isRegularFile(p))
+                  .filter(p -> p.toString().endsWith(".sql"))
+
+                  .map(p -> {
+                      try {
+                          return Files.readAllLines(p);
+                      } catch (IOException e) {
+                          e.printStackTrace();
+                          return null;
+                      }
+                  }).filter(Objects::nonNull)
+                  .flatMap(Collection::stream)
+                  .collect(Collectors.joining());
 
 
 
-        InputStream is = fullObject.getObjectContent();
+                 // .collect(Collectors.toList());
+
+            System.out.println();
 
 
 
-        File targetFile = new File("newFile.png");
-        OutputStream outStream = new FileOutputStream(targetFile);
-
-        byte[] buffer = new byte[8 * 1024];
-        int bytesRead;
-        while ((bytesRead = is.read(buffer)) != -1) {
-            outStream.write(buffer, 0, bytesRead);
         }
-        outStream.flush();
-        outStream.close();
-        is.close();
-
-    }
 
 
-    public static void createFolder(String bucketName, String folderName, AmazonS3 client) {
-        ObjectMetadata metadata = new ObjectMetadata();
-        metadata.setContentLength(0);
-        InputStream emptyContent = new ByteArrayInputStream(new byte[0]);
-        PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName,
-                folderName + SUFFIX, emptyContent, metadata);
-        client.putObject(putObjectRequest);
-    }
+
+
+
+
+
+
+
+        }
+
+
+
 
 
 }
+
+
+
+
+
 
 
 
