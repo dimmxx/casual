@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,9 +23,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e80ada6c-cd3b-4bd9-835c-6aa4afe1e750" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscaling_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudformation_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudfront_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudsearch_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudtrail_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatch_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatchmetrics_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitoidentity_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitosync_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_core_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_datapipeline_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_directconnect_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dynamodb_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ec2_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticache_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticbeanstalk_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticloadbalancing_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elastictranscoder_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_emr_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_glacier_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iam_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_importexport_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kinesis_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_logs_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_opsworks_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rds_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_redshift_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_route53_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_s3_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ses_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpledb_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpleworkflow_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sns_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sqs_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_storagegateway_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sts_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_support_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_swf_libraries_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/casual.iml" beforeDir="false" afterPath="$PROJECT_DIR$/casual.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newFile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mycompany/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mycompany/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +99,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ejf0nfdhrOy9tKx4kV9B4BJHKe" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,10 +121,62 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.App" />
+      <module name="casual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.App1" />
+      <module name="casual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalendarQuickStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.CalendarQuickStart" />
+      <module name="casual" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CredentialApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.CredentialApp" />
       <module name="casual" />
       <extension name="coverage">
         <pattern>
@@ -85,10 +204,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.CredentialApp" />
+        <item itemvalue="Application.CalendarQuickStart" />
+        <item itemvalue="Application.App1" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -106,11 +229,29 @@
       <workItem from="1595015810199" duration="70000" />
       <workItem from="1596483483718" duration="1489000" />
       <workItem from="1596510245869" duration="1475000" />
+      <workItem from="1596513266919" duration="3888000" />
+      <workItem from="1596519633630" duration="1215000" />
+      <workItem from="1596526077549" duration="436000" />
+      <workItem from="1596738211354" duration="1835000" />
+      <workItem from="1596780209321" duration="8544000" />
+      <workItem from="1596814180783" duration="4131000" />
+      <workItem from="1596824545205" duration="8000" />
+      <workItem from="1597732062199" duration="55000" />
+      <workItem from="1597732128251" duration="9000" />
+      <workItem from="1597816316899" duration="20000" />
+      <workItem from="1597816399371" duration="9237000" />
+      <workItem from="1597847121902" duration="2000" />
+      <workItem from="1599146936478" duration="1055000" />
+      <workItem from="1599208994183" duration="41000" />
+      <workItem from="1599371690175" duration="334000" />
+      <workItem from="1599374720761" duration="643000" />
+      <workItem from="1599401190701" duration="4000" />
+      <workItem from="1601312990631" duration="1067000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -129,66 +270,74 @@
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="453" y="101" key="#com.intellij.ide.util.MemberChooser/0.23.1280.729@0.23.1280.729" timestamp="1594929193851" />
-    <state width="1238" height="36" key="GridCell.Tab.0.bottom" timestamp="1596511633929">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state x="1920" y="27" width="1196" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597825312284">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1920" y="27" width="1196" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597825312284" />
+    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1596814194403">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596814194403" />
+    <state width="1814" height="419" key="GridCell.Tab.0.bottom" timestamp="1601313861735">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1596511633929" />
-    <state width="1238" height="36" key="GridCell.Tab.0.center" timestamp="1596511633927">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
+    <state width="1814" height="419" key="GridCell.Tab.0.bottom/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
+    <state width="1814" height="419" key="GridCell.Tab.0.center" timestamp="1601313861735">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1596511633927" />
-    <state width="1238" height="36" key="GridCell.Tab.0.left" timestamp="1596511633920">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
+    <state width="1814" height="419" key="GridCell.Tab.0.center/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
+    <state width="1814" height="419" key="GridCell.Tab.0.left" timestamp="1601313861735">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1596511633920" />
-    <state width="1238" height="36" key="GridCell.Tab.0.right" timestamp="1596511633928">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
+    <state width="1814" height="419" key="GridCell.Tab.0.left/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
+    <state width="1814" height="419" key="GridCell.Tab.0.right" timestamp="1601313861735">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1596511633928" />
-    <state width="1238" height="36" key="GridCell.Tab.1.bottom" timestamp="1596511634165">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
+    <state width="1814" height="419" key="GridCell.Tab.0.right/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
+    <state width="1874" height="154" key="GridCell.Tab.1.bottom" timestamp="1597824925786">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.1.bottom/0.23.1280.729@0.23.1280.729" timestamp="1596511634165" />
-    <state width="1238" height="36" key="GridCell.Tab.1.center" timestamp="1596511634164">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="154" key="GridCell.Tab.1.bottom/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
+    <state width="1874" height="154" key="GridCell.Tab.1.center" timestamp="1597824925786">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.1.center/0.23.1280.729@0.23.1280.729" timestamp="1596511634164" />
-    <state width="1238" height="36" key="GridCell.Tab.1.left" timestamp="1596511634163">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="154" key="GridCell.Tab.1.center/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
+    <state width="1874" height="154" key="GridCell.Tab.1.left" timestamp="1597824925786">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.1.left/0.23.1280.729@0.23.1280.729" timestamp="1596511634163" />
-    <state width="1238" height="36" key="GridCell.Tab.1.right" timestamp="1596511634165">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="154" key="GridCell.Tab.1.left/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
+    <state width="1874" height="154" key="GridCell.Tab.1.right" timestamp="1597824925786">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1238" height="36" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1596511634165" />
-    <state width="640" height="364" key="XDebugger.FullValuePopup" timestamp="1594839981500">
-      <screen x="0" y="23" width="1280" height="729" />
+    <state width="1874" height="154" key="GridCell.Tab.1.right/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
+    <state x="2369" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1597732113429">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="188" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597732113429" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1596789320743">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="640" height="364" key="XDebugger.FullValuePopup/0.23.1280.729@0.23.1280.729" timestamp="1594839981500" />
+    <state width="960" height="540" key="XDebugger.FullValuePopup/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596789320743" />
     <state x="341" y="23" width="598" height="729" key="find.popup" timestamp="1596483531188">
       <screen x="0" y="23" width="1280" height="729" />
     </state>
     <state x="341" y="23" width="598" height="729" key="find.popup/0.23.1280.729@0.23.1280.729" timestamp="1596483531188" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/App.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/App.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/App.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="2544" y="252" key="run.anything.popup" timestamp="1596794909919">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2544" y="252" key="run.anything.popup/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596794909919" />
   </component>
 </project>

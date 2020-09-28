@@ -1,72 +1,49 @@
 package com.mycompany;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class App {
 
-    public static void main (String[] args) throws Exception {
-
-        String line = "/Users/mint/Downloads";
-        Path path = Paths.get(line);
+    public static void main(String[] args) throws IOException {
 
 
-        try(Stream<Path> pathStream = Files.walk(path)){
+        LocalDate date = LocalDate.now();
 
-          String str =  pathStream
-                  .filter(p -> Files.isRegularFile(p))
-                  .filter(p -> p.toString().endsWith(".sql"))
+        //LocalDate date = LocalDate.of(2020, 10, 1);
 
-                  .map(p -> {
-                      try {
-                          return Files.readAllLines(p);
-                      } catch (IOException e) {
-                          e.printStackTrace();
-                          return null;
-                      }
-                  }).filter(Objects::nonNull)
-                  .flatMap(Collection::stream)
-                  .collect(Collectors.joining());
+        System.out.println(date);
+        System.out.println(date.lengthOfMonth());
+
+
+        Map<String, LocalTime> map = new LinkedHashMap<>();
+
+        for(int i = 0; i < date.lengthOfMonth(); i++){
+            String month = date.getMonth().getValue() < 10?"0" + date.getMonth().getValue():"" + date.getMonth().getValue();
+            String day = (i + 1) < 10?"0" + (i + 1):"" + (i + 1);
 
 
 
-                 // .collect(Collectors.toList());
-
-            System.out.println();
 
 
-
+            map.put(date.getYear() + "-" + month + "-" + day, null);
         }
 
+        map.forEach((k, v) -> System.out.println(k + ": " + v));
 
 
 
-
-
-
-
-
-        }
-
+    }
 
 
 
 
 }
-
-
-
-
-
-
-
-
