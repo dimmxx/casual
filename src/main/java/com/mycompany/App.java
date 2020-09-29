@@ -15,40 +15,16 @@ public class App {
     public static void main(String[] args) throws IOException {
 
 
-        LocalDate date = LocalDate.now();
+        LocalTime time = LocalTime.now();
 
-        //LocalDate date = LocalDate.of(2020, 10, 1);
-
-        System.out.println(date);
-        System.out.println(date.lengthOfMonth());
+        System.out.println(time);
 
 
-        Map<String, LocalTime> map = new LinkedHashMap<>();
+        LocalTime t1 = LocalTime.of(9, 0);
 
-        for(int i = 0; i < date.lengthOfMonth(); i++){
-            String month = date.getMonth().getValue() < 10?"0" + date.getMonth().getValue():"" + date.getMonth().getValue();
-            String day = (i + 1) < 10?"0" + (i + 1):"" + (i + 1);
+        LocalTime t2 = LocalTime.of(9, 0);
 
-            map.put(date.getYear() + "-" + month + "-" + day, null);
-        }
-
-        List<String> ll = map.keySet().stream()
-                .filter(k -> LocalDate.parse(k).getDayOfWeek().getValue() == 6)
-                .collect(Collectors.toList());
-
-        map.forEach((k, v) -> System.out.println(k + ": " + v));
-
-        System.out.println(ll);
-
-
-        map.entrySet().stream()
-                .filter(e -> LocalDate.parse(e.getKey()).getDayOfWeek().getValue() == 6)
-                .forEach(e -> e.setValue(LocalTime.now()));
-
-
-        map.forEach((k, v) -> System.out.println(k + ": " + v));
-
-
+        System.out.println(t2.isAfter(t1));
 
     }
 
