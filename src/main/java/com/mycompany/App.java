@@ -1,34 +1,69 @@
 package com.mycompany;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-
-import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class App {
 
     public static void main(String[] args) throws IOException {
 
+        class Pair<T,U> {
+            private final T key;
+            private final U value;
 
-        LocalTime time = LocalTime.now();
+            public Pair(T key, U value) {
+                this.key = key;
+                this.value = value;
+            }
 
-        System.out.println(time);
+            public T getKey() {
+                return this.key;
+            }
+            public U getValue() {
+                return this.value;
+            }
+
+            @Override
+            public String toString() {
+                return "Pair{" +
+                        "key=" + key +
+                        ", value=" + value +
+                        '}';
+            }
+        }
+
+        List<Pair<LocalTime, LocalTime>> list = new ArrayList<>();
+        Pair<LocalTime, LocalTime> pair1 = new Pair<>(LocalTime.of(9,0), LocalTime.of(10,30));
+        Pair<LocalTime, LocalTime> pair2 = new Pair<>(LocalTime.of(7,0), LocalTime.of(8,30));
+
+        list.add(pair1);
+        list.add(pair2);
+
+        System.out.println(list);
 
 
-        LocalTime t1 = LocalTime.of(9, 0);
+        list.sort((Comparator.comparing(Pair::getKey)));
 
-        LocalTime t2 = LocalTime.of(9, 0);
+        list.sort(new Comparator<Pair<LocalTime, LocalTime>>() {
+            @Override
+            public int compare(Pair<LocalTime, LocalTime> o1, Pair<LocalTime, LocalTime> o2) {
+                return o1.getKey().compareTo(o2.getKey());
+            }
+        });
 
-        System.out.println(t2.isAfter(t1));
+        System.out.println(list);
+
+
+
+
+
+
 
     }
-
-
 
 
 }
