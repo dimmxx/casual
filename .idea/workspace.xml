@@ -23,8 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e80ada6c-cd3b-4bd9-835c-6aa4afe1e750" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/App$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/App$1Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycompany/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycompany/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mycompany/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/mycompany/AppTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +54,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ejf0nfdhrOy9tKx4kV9B4BJHKe" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -63,7 +69,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -130,8 +139,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.Main" />
+    <configuration name="GenericsExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.GenericsExamples" />
       <module name="casual" />
       <extension name="coverage">
         <pattern>
@@ -143,26 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.GenericsExamples" />
         <item itemvalue="Application.CredentialApp" />
         <item itemvalue="Application.CalendarQuickStart" />
         <item itemvalue="Application.App1" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -205,6 +201,30 @@
       <workItem from="1601317687726" duration="125000" />
       <workItem from="1601317819461" duration="1581000" />
       <workItem from="1601361523327" duration="1518000" />
+      <workItem from="1601534990133" duration="728000" />
+      <workItem from="1602964138260" duration="1659000" />
+      <workItem from="1602965942440" duration="844000" />
+      <workItem from="1602994236812" duration="1638000" />
+      <workItem from="1602996117297" duration="532000" />
+      <workItem from="1603046037405" duration="1314000" />
+      <workItem from="1603047856832" duration="1205000" />
+      <workItem from="1603078416128" duration="1716000" />
+      <workItem from="1603080232892" duration="1543000" />
+      <workItem from="1603313209955" duration="969000" />
+      <workItem from="1603395536636" duration="1708000" />
+      <workItem from="1603397349874" duration="1100000" />
+      <workItem from="1603419299866" duration="1482000" />
+      <workItem from="1603421094185" duration="228000" />
+      <workItem from="1603479280199" duration="610000" />
+      <workItem from="1603568648752" duration="901000" />
+      <workItem from="1603653037867" duration="495000" />
+      <workItem from="1603743204285" duration="843000" />
+      <workItem from="1604050349569" duration="12000" />
+      <workItem from="1604057202827" duration="1766000" />
+      <workItem from="1607804825846" duration="621000" />
+      <workItem from="1608496867333" duration="165000" />
+      <workItem from="1608930807029" duration="22000" />
+      <workItem from="1608930893840" duration="1913000" />
     </task>
     <servers />
   </component>
@@ -222,89 +242,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="104" y="49" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601317802862">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state x="104" y="49" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.729@0.23.1280.729" timestamp="1601317802862" />
-    <state x="453" y="101" key="#com.intellij.ide.util.MemberChooser" timestamp="1601495586923">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state x="453" y="101" key="#com.intellij.ide.util.MemberChooser/0.23.1280.729@0.23.1280.729" timestamp="1601495586923" />
-    <state x="377" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601317797111">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state x="377" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1280.729@0.23.1280.729" timestamp="1601317797111" />
-    <state x="1920" y="27" width="1196" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597825312284">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1920" y="27" width="1196" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597825312284" />
-    <state x="780" y="330" width="424" height="491" key="FileChooserDialogImpl" timestamp="1601361538099">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="2663" y="311" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596814194403" />
-    <state x="780" y="330" key="FileChooserDialogImpl/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601361538099" />
-    <state width="1238" height="205" key="GridCell.Tab.0.bottom" timestamp="1601495064482">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state width="1238" height="205" key="GridCell.Tab.0.bottom/0.23.1280.729@0.23.1280.729" timestamp="1601495064482" />
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
-    <state width="1814" height="419" key="GridCell.Tab.0.bottom/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
-    <state width="1238" height="205" key="GridCell.Tab.0.center" timestamp="1601495064481">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state width="1238" height="205" key="GridCell.Tab.0.center/0.23.1280.729@0.23.1280.729" timestamp="1601495064481" />
-    <state width="1874" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
-    <state width="1814" height="419" key="GridCell.Tab.0.center/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
-    <state width="1238" height="205" key="GridCell.Tab.0.left" timestamp="1601495064481">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state width="1238" height="205" key="GridCell.Tab.0.left/0.23.1280.729@0.23.1280.729" timestamp="1601495064481" />
-    <state width="1874" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
-    <state width="1814" height="419" key="GridCell.Tab.0.left/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
-    <state width="1238" height="205" key="GridCell.Tab.0.right" timestamp="1601495064482">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state width="1238" height="205" key="GridCell.Tab.0.right/0.23.1280.729@0.23.1280.729" timestamp="1601495064482" />
-    <state width="1874" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1599147990906" />
-    <state width="1814" height="419" key="GridCell.Tab.0.right/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1601313861735" />
-    <state width="1874" height="154" key="GridCell.Tab.1.bottom" timestamp="1597824925786">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1238" height="36" key="GridCell.Tab.1.bottom/0.23.1280.729@0.23.1280.729" timestamp="1596511634165" />
-    <state width="1874" height="154" key="GridCell.Tab.1.bottom/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
-    <state width="1874" height="154" key="GridCell.Tab.1.center" timestamp="1597824925786">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1238" height="36" key="GridCell.Tab.1.center/0.23.1280.729@0.23.1280.729" timestamp="1596511634164" />
-    <state width="1874" height="154" key="GridCell.Tab.1.center/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
-    <state width="1874" height="154" key="GridCell.Tab.1.left" timestamp="1597824925786">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1238" height="36" key="GridCell.Tab.1.left/0.23.1280.729@0.23.1280.729" timestamp="1596511634163" />
-    <state width="1874" height="154" key="GridCell.Tab.1.left/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
-    <state width="1874" height="154" key="GridCell.Tab.1.right" timestamp="1597824925786">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="1238" height="36" key="GridCell.Tab.1.right/0.23.1280.729@0.23.1280.729" timestamp="1596511634165" />
-    <state width="1874" height="154" key="GridCell.Tab.1.right/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597824925786" />
-    <state x="2369" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1597732113429">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2369" y="188" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1597732113429" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1596789320743">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state width="640" height="364" key="XDebugger.FullValuePopup/0.23.1280.729@0.23.1280.729" timestamp="1594839981500" />
-    <state width="960" height="540" key="XDebugger.FullValuePopup/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596789320743" />
-    <state x="341" y="23" width="598" height="729" key="find.popup" timestamp="1596483531188">
-      <screen x="0" y="23" width="1280" height="729" />
-    </state>
-    <state x="341" y="23" width="598" height="729" key="find.popup/0.23.1280.729@0.23.1280.729" timestamp="1596483531188" />
-    <state x="2544" y="252" key="run.anything.popup" timestamp="1596794909919">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2544" y="252" key="run.anything.popup/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1596794909919" />
   </component>
 </project>

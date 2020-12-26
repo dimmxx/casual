@@ -1,69 +1,55 @@
 package com.mycompany;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class App {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
-        class Pair<T,U> {
-            private final T key;
-            private final U value;
+        String str = "2020-12-25 09:00";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        LocalDateTime localDateTimeS = LocalDateTime.parse(str, formatter);
 
-            public Pair(T key, U value) {
-                this.key = key;
-                this.value = value;
-            }
+        List<LocalDateTime> list = new ArrayList<>();
+        list.add(localDateTimeS);
 
-            public T getKey() {
-                return this.key;
-            }
-            public U getValue() {
-                return this.value;
-            }
-
-            @Override
-            public String toString() {
-                return "Pair{" +
-                        "key=" + key +
-                        ", value=" + value +
-                        '}';
-            }
+        for(int i = 0; i < 600; i++){
+            localDateTimeS = localDateTimeS.plus(1, ChronoUnit.MINUTES);
+            list.add(localDateTimeS);
         }
 
-        List<Pair<LocalTime, LocalTime>> list = new ArrayList<>();
-        Pair<LocalTime, LocalTime> pair1 = new Pair<>(LocalTime.of(9,0), LocalTime.of(10,30));
-        Pair<LocalTime, LocalTime> pair2 = new Pair<>(LocalTime.of(7,0), LocalTime.of(8,30));
-
-        list.add(pair1);
-        list.add(pair2);
-
         System.out.println(list);
 
 
-        list.sort((Comparator.comparing(Pair::getKey)));
+        List<Pair<LocalDateTime, LocalDateTime>> result = new ArrayList<>();
+        LocalDateTime key = list.get(0);
+        LocalDateTime value = list.get(list.size() - 1);
 
-        list.sort(new Comparator<Pair<LocalTime, LocalTime>>() {
-            @Override
-            public int compare(Pair<LocalTime, LocalTime> o1, Pair<LocalTime, LocalTime> o2) {
-                return o1.getKey().compareTo(o2.getKey());
+        for(int i = 0; i < list.size() - 1; i++){
+
+            if(list.get(i).equals(list.get(i + 1).plus(1, ChronoUnit.MINUTES))){
+                temp = list.get(i + 1);
+            } else{
+
+
+
             }
-        });
-
-        System.out.println(list);
 
 
+        }
 
 
 
 
 
     }
+
+
+
 
 
 }
