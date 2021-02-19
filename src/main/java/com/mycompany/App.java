@@ -1,5 +1,8 @@
 package com.mycompany;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.net.Authenticator;
 import java.net.InetSocketAddress;
 import java.net.ProxySelector;
@@ -11,11 +14,12 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
 
         String req = "https://fttx-client-dev.impltech.com/ogc/1?ACCEPTVERSIONS=2.0.0,1.1.0,1.0.0&SERVICE=WFS&REQUEST=GetFeature&VERSION=1.1.0&TYPENAME=cable&outputFormat=application/json&SRSNAME=EPSG:4326";
@@ -38,11 +42,25 @@ public class App {
 
         CompletableFuture<String> completableFuture = client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(HttpResponse::body);
+        String response = completableFuture.get();
+        System.out.println(response);
 
 
-        if(completableFuture.isDone()){
-            System.out.println(completableFuture);
+        JSONObject jsonObject = new JSONObject(response);
+
+        JSONArray array = jsonObject.getJSONArray("features");
+        jsonObject = array.getJSONObject(0);
+        jsonObject = jsonObject.getJSONObject("geometry");
+        array = jsonObject.getJSONArray("coordinates");
+
+
+        for(int i = 0; i < array.length(); i++) {
+            System.out.println(array.get(i));
         }
+
+        System.out.println(array);
+
+
 
     }
 
