@@ -5,10 +5,11 @@ import java.util.Map;
 
 public class Crs {
 
-	private String type;
+	private String type = "name";
 	private Map<String, Object> properties = new HashMap<String, Object>();
 
 	public Crs() {
+		properties.put("name", "EPSG:4326");
 	}
 
 	public String getType() {

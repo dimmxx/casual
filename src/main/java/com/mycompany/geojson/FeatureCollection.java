@@ -7,9 +7,18 @@ public class FeatureCollection {
 
 	private String type;
 	private Crs crs;
+	private List<Double> bbox = new ArrayList<>();
 	private List<Feature> features = new ArrayList<>();
 
 	public FeatureCollection() {
+	}
+
+	public List<Double> getbox() {
+		return bbox;
+	}B
+
+	public void setBbox(List<Double> bbox) {
+		this.bbox = bbox;
 	}
 
 	public String getType() {

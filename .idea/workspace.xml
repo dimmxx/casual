@@ -232,7 +232,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/App2.java</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

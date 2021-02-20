@@ -6,7 +6,7 @@ import java.util.List;
 public class Geometry {
 
 	public String type;
-	public List<String> coordinates = new ArrayList<>();
+	public List<Double> coordinates = new ArrayList<>();
 
 	public Geometry() {
 	}
@@ -19,11 +19,11 @@ public class Geometry {
 		this.type = type;
 	}
 
-	public List<String> getCoordinates() {
+	public List<Double> getCoordinates() {
 		return coordinates;
 	}
 
-	public void setCoordinates(List<String> coordinates) {
+	public void setCoordinates(List<Double> coordinates) {
 		this.coordinates = coordinates;
 	}
 }
